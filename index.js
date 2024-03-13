@@ -12,7 +12,9 @@ require("./config/passport")(passport);
 const cors = require("cors");
 
 mongoose
-  .connect("mongodb://localhost:27017/socialMediaConnect")
+  .connect(
+    "mongodb+srv://gokueric88:i6zCyKNregFNZEPG@cluster0.huod2nd.mongodb.net/"
+  )
   .then(() => {
     console.log("Connecting to mongodb...");
   })
